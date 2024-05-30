@@ -1,0 +1,308 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.hero{
+    width: 30%;
+    background-color: #278d94;
+    padding: 3%;
+    margin: 10% auto 5%;
+}
+.inputitems{
+    width: 100%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  
+}
+.inputitems input{
+    flex: 1;
+    border-radius: 2vmax;
+    padding: 0.8vmax;
+    outline: none;
+    border: none;
+    background: #ebebeb;
+}
+.inputitems button{
+    padding: 0.8vmax 1.6vmax;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-radius: 2vmax;
+    background: #fe6363;
+    position: absolute;
+    left: 80%;
+} */
+
+
+/* .container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: fixed; */
+
+
+
+
+    *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://images.unsplash.com/photo-1714779573259-216b0cf746be?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 3% 0;
+}
+.container1 {
+    width: 50vmax;
+    height: auto;
+    min-height: 400px;
+    padding: 30px;
+    background: transparent;
+    border: 2px solid #6d94af;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+  }
+  .container1 h1{
+    margin-left: 12vmax;
+    margin-top: -5vmax;
+  }
+.container2 {
+  width: 50vmax;
+  height: auto;
+  min-height: 400px;
+  padding: 30px;
+  background: transparent;
+  border: 2px solid #6d94af;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+}
+
+h1 {
+  color: #eee;
+  text-align: center;
+  margin-bottom: 5vmax;
+  font-size: 3vmax;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 300;
+}
+.aa{
+    width: 34%;
+    height: 30%;
+    background-image: url(https://cpng.pikpng.com/pngl/s/70-704286_transparent-edit-button-png-clipart.png);
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+h2 {
+    color: #eee;
+    text-align: center;
+    margin-bottom: 5vmax;
+    font-size: 2.5vmax;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+  }
+.input-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.todo-input {
+  flex: 1;
+  outline: none;
+  padding: 10px 10px 10px 20px;
+  background-color: transparent;
+  border: 2px solid #6d94af;
+  border-radius: 30px;
+  color: #eee;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.todo-input::placeholder {
+  color: #bfbfbf;
+}
+
+.add-button {
+  border: none;
+  outline: none;
+  background: #6d94af;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.empty-image {
+  margin: 55px auto 0;
+  display: block;
+}
+
+.todo {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:linear-gradient(#9eb1ff36, #00226cd8) ;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px solid #389de6;
+  transition: all 0.2s ease;
+}
+
+.todo:first-child {
+  margin-top: 0;
+}
+
+.todo:last-child {
+  margin-bottom: 0;
+}
+
+.todo:hover {
+  background-color:#0041aa;
+}
+
+.todo label {
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #eee;
+}
+
+.todo span {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+span::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin-left: -30px;
+  border-radius: 100px;
+  border: 1px solid #0041aa;;
+}
+
+input[type='checkbox'] {
+  visibility: hidden;
+}
+
+input:checked + span {
+  text-decoration: line-through
+}
+
+.todo:hover input:checked + span::before, input:checked + span::before {
+  background: url(./check.svg) 50% 50% no-repeat #09bb21;
+  border-color: #09bb21;
+}
+
+.todo:hover span::before {
+  border-color: #eee;
+}
+
+.todo .delete-btn  {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #eee;
+  font-size: 24px;
+}
+
+.todos-container  {
+  height: 300px;
+  overflow: overlay;
+}
+
+.todos-container::-webkit-scrollbar-track  {
+  background: rgb(247, 247, 247);
+  border-radius: 20px
+}
+
+.todos-container::-webkit-scrollbar  {
+  width: 0;
+}
+
+.todos-container:hover::-webkit-scrollbar  {
+  width: 7px;
+}
+
+.todos-container::-webkit-scrollbar-thumb  {
+  background: #2758e1;
+  border-radius: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.filter {
+  color: #eee;
+  padding: 5px 15px;
+  border-radius: 100px;
+  border: 1px solid #6d94af;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.filter.active, .filter:hover {
+    background-color:#0041aa;
+}
+
+.delete-all {
+  display: flex;
+  color: #eee;
+  padding: 7px 15px;
+  cursor: pointer;
+  border: 2px solid #6d94af;
+  transition: all 0.2s ease;
+  border-radius: 0.5vmax;
+}
+
+.delete-all:hover {
+  border-radius: 5px;
+  background-color: #0041aa;;
+}
